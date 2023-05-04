@@ -1,6 +1,6 @@
 # imbalance-gain-causality
 
-This repository contains the supporting codes for the article **Robust inference of causal links in high-dimensional dynamical processes from the information imbalance of rank statistics** (unpublished).
+This repository contains the supporting codes for the article **Robust inference of causality in high-dimensional dynamical processes from the Information Imbalance of distance ranks** (unpublished).
 
 The functions employed to compute the Imbalance Gain in the paper are in the Python files _utilities.py_ and _imbalance_gain.py_, and their use is illustrated in the notebook _tutorial.ipynb_.
 
