@@ -92,7 +92,7 @@ def scan_alphas(cause_present, effect_present,
 
 def compute_imbalance_gain(info_imbalances):
     """
-    Computes the Imbalance compute_imbalance_gain
+    Computes the Imbalance Gain
         ( Delta(alpha=0) - min_alpha Delta(alpha) ) / Delta(alpha=0)
 
     Args:
