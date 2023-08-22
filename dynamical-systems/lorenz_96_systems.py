@@ -3,6 +3,7 @@ import argparse
 import numpy as np
 
 from scipy.integrate import odeint
+from numpy.random import random
 
 ###################################################################
 
@@ -52,19 +53,20 @@ if __name__ == '__main__':
                         dest="undersample_factor",
                         default=2, type=int,
                         help="Undersample factor")
-    parser.add_argument("-if", "--flick", dest="flick",
-                        default=0.01, type=float,
-                        help="Initial perturbation on X0 and Y0")
+    parser.add_argument("-rs", "--seed", dest="seed",
+                        default=1998, type=int,
+                        help="Random seed")
     parser.add_argument("-out", "--output", dest="output_filename",
                         default="trajectory_lorenz96_systems.p", type=str,
                         help="Output file name")
     args = parser.parse_args()
 
     # set initial conditions
+    np.random.seed(seed=args.seed)
     x0 = args.F1 * np.ones(args.N)
-    x0[0] += args.flick  # Add small perturbation to the first variable
+    x0[0] += 0.01 * random() # Add small perturbation to the first variable
     y0 = args.F2 * np.ones(args.N)
-    y0[0] += args.flick
+    y0[0] += 0.01 * random()
     xy0 = np.append(x0, y0)
 
     # set integration parameters
