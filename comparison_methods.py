@@ -4,8 +4,6 @@ import numpy as np
 from sklearn.neighbors import NearestNeighbors
 from sklearn.linear_model import LinearRegression
 
-
-sys.path.insert(0, '..')
 from utilities import compute_info_imbalance, compute_pearson_correlation, construct_time_delay_embedding
 
 
