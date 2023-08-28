@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_egc_lorenz96.py", line 27, in <module>
+    X_time_delay, Y_time_delay = construct_time_delay_embedding(X=trajectory[:,1], Y=trajectory[:,D+1], E=E, tau_e=tau_e)
+IndexError: index 41 is out of bounds for axis 1 with size 7

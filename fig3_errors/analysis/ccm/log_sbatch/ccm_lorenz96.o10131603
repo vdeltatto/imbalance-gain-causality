@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_ccm_lorenz96.py", line 10, in <module>
+    sample_traj = pickle.load(open(f"../../trajs/lorenz96/seed0_ieps0.p","rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../../trajs/lorenz96/seed0_ieps0.p'

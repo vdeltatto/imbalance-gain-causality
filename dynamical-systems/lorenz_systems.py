@@ -76,12 +76,14 @@ if __name__ == '__main__':
 
     # set initial conditions
     np.random.seed(seed=args.seed)
-    x0 = args.x0
-    y0 = [
-            x0[0]*(0.5 + random()),
-            x0[1]*(0.5 + random()),
-            x0[2]*(0.5 + random())
-         ]
+    #x0 = args.x0
+    x0 = 10*(random(size=3)-0.5)
+    y0 = 10*(random(size=3)-0.5)
+        #[
+        #    x0[0]*(0.5 + random()),
+        #    x0[1]*(0.5 + random()),
+        #    x0[2]*(0.5 + random())
+        #]
     xy0 = np.append(x0, y0)
     t0 = 0.
 

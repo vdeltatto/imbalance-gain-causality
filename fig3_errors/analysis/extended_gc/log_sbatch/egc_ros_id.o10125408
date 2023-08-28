@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_egc_rossler_id.py", line 33, in <module>
+    pickle.dump([egc_index_X_to_Y, egc_index_Y_to_X], open(f"./pickles/rossler_id/seed{seed}.p","wb"))
+FileNotFoundError: [Errno 2] No such file or directory: './pickles/rossler_id/seed0.p'

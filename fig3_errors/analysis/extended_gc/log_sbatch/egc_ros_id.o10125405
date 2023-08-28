@@ -1,0 +1,2 @@
+/var/spool/slurm/d/job10125405/slurm_script: line 13: 14802 Killed                  python3 compute_egc_rossler_id.py ${1}
+slurmstepd: error: Detected 1 oom-kill event(s) in step 10125405.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

@@ -1,0 +1,546 @@
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: divide by zero encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: divide by zero encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:45: RuntimeWarning: invalid value encountered in divide
+  u_j_x[:, neighbor] = np.exp(-distances_x[:, neighbor+1] /
+/scratch/vdeltatt/imbalance-gain-causality/comparison_methods.py:47: RuntimeWarning: invalid value encountered in divide
+  u_j_y[:, neighbor] = np.exp(-distances_y[:, neighbor+1] /
