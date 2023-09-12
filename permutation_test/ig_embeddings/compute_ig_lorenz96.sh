@@ -6,7 +6,7 @@
 #SBATCH --partition=regular1,regular2
 #SBATCH --output=./log_sbatch/%x.o%j              # Standard output
 #SBATCH --error=./log_sbatch/%x.o%j               # Standard error
-#SBATCH --mail-type=FAIL                 # Mail events (NONE, BEGIN, END, FAIL, ALL). Sends you an email when the job begins, ends, or fails; you can combine options.
+#SBATCH --mail-type=NONE                 # Mail events (NONE, BEGIN, END, FAIL, ALL). Sends you an email when the job begins, ends, or fails; you can combine options.
 #SBATCH --mail-user=vdeltatt@sissa.it    # Where to send the mail
 #send using parallel sbatch compute_ig_lorenz96.sh ::: {0..999}
 
