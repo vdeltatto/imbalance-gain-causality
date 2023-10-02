@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_ig_lorenz96.py", line 26, in <module>
+    Xtau = trajectory[sample_times+tau,1:D+1]
+IndexError: index 352544 is out of bounds for axis 0 with size 352500
