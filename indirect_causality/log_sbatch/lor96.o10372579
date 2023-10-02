@@ -1,0 +1,8 @@
+usage: three_lorenz_96_systems.py [-h] [-N N] [-Fx FX] [-Fy FY] [-Fz FZ]
+                                  [-eps_xy EPSILON_XY] [-eps_zx EPSILON_ZX]
+                                  [-nsamples NSAMPLES] [-dt DT]
+                                  [-uf UNDERSAMPLE_FACTOR] [-rs SEED]
+                                  [-out OUTPUT_FILENAME]
+three_lorenz_96_systems.py: error: argument -Fx/--Fx: invalid int value: '5.0'
+/var/spool/slurm/d/job10372579/slurm_script: line 22: syntax error near unexpected token `done'
+/var/spool/slurm/d/job10372579/slurm_script: line 22: `done'
