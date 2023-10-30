@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_ig_lorenz.py", line 9, in <module>
+    traj = pickle.load(open(f"/scratch/vdeltatt/imbalance-gain-causality/fig3_errors/trajs/lorenz_indep/seed{seed}_ieps0.p","rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '/scratch/vdeltatt/imbalance-gain-causality/fig3_errors/trajs/lorenz_indep/seed6_ieps0.p'

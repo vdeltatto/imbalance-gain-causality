@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "compute_ig_lorenz.py", line 26, in <module>
+    info_imbalances[iE] = d.return_inf_imb_two_selected_coords(coords1=np.arange(E), coords2=np.arange(E+1), k=k)
+  File "/home/vdeltatt/mydadapy/lib64/python3.8/site-packages/dadapy/metric_comparisons.py", line 84, in return_inf_imb_two_selected_coords
+    X_ = self.X[:, coords2]
+IndexError: index 14 is out of bounds for axis 1 with size 14

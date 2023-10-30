@@ -1,0 +1,2 @@
+usage: compute_ig.py [-h] [-coupling COUPLING] [-seed SEED] [-tau_X0 TAU_X0]
+compute_ig.py: error: argument -tau_X0/--tau_X0: expected one argument

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_ig_lorenz96.py", line 22, in <module>
+    X_time_delay, _ = construct_time_delay_embedding(X=traj[:,1], Y=traj[:,D+1], E=Es[-1], tau_e=tau_e)
+TypeError: construct_time_delay_embedding() got an unexpected keyword argument 'Y'

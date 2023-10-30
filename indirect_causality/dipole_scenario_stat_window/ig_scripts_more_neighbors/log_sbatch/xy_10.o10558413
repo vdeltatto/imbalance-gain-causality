@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_ig.py", line 44, in <module>
+    Y0 = trajectories[:,t0-E:t0, args.iY]
+IndexError: only integers, slices (`:`), ellipsis (`...`), numpy.newaxis (`None`) and integer or boolean arrays are valid indices

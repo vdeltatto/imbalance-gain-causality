@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_ig.py", line 20, in <module>
+    trajectories[itraj] = pickle.load(open(f"../trajs_{args.coupling}/seed{args.seed}/itraj{itraj}","rb"))
+FileNotFoundError: [Errno 2] No such file or directory: '../trajs_epszx_1/seed0/itraj0'

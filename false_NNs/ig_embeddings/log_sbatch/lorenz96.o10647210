@@ -1,0 +1,2 @@
+/var/spool/slurm/d/job10647210/slurm_script: line 13: 30074 Killed                  python3 compute_ig_lorenz96.py ${1}
+slurmstepd: error: Detected 1 oom-kill event(s) in step 10647210.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_ig.py", line 34, in <module>
+    if args.case == "XY":
+AttributeError: 'Namespace' object has no attribute 'case'

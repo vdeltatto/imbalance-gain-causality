@@ -1,0 +1,6 @@
+usage: dipole_scenario_window_z.py [-h] [-N N] [-Fx FX] [-Fz FZ]
+                                   [-eps_zx EPSILON_ZX] [-nsamples NSAMPLES]
+                                   [-nsamples_decorr NSAMPLES_DECORR] [-dt DT]
+                                   [-t0 T0] [-tf TF] [-uf UNDERSAMPLE_FACTOR]
+                                   [-rs SEED] [-out OUTPUT_FOLDER]
+dipole_scenario_window_z.py: error: unrecognized arguments: --f 2000

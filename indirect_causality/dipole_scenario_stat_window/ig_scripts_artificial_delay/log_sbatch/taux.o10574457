@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "compute_ig.py", line 41, in <module>
+    Ytau = trajectories[:,t0+tau-E:t0+tau, args.iY]
+AttributeError: 'Namespace' object has no attribute 'iY'
