@@ -47,12 +47,16 @@ args = parser.parse_args()
 genes_df = pd.read_csv("gene.yyy")
 times_df = pd.read_csv("time.yyy")
 
+# reorder points according to labels of points in gene datasets
+labels_points = (genes_df.T).index[1:].values.astype(str)
+times_df = times_df.set_index('Sample').reindex(labels_points).reset_index()
+
 # extract numpy arrays from pandas dataframes
-times = times_df['Calcium Signaling Pseudotime'].to_numpy() + np.random.normal()
+times = times_df['Calcium Signaling Pseudotime'].to_numpy()
 genes = (genes_df.T).iloc[1:,:].to_numpy(dtype=float)
 
 # add noise to break neighbor degeneracies (both in gene and pseudotime spaces)
-times += np.random.normal(loc=0., scale=1e-10, size=times.shape)
+times += np.random.normal(loc=0., scale=1e-6, size=times.shape)
 genes += np.random.normal(loc=0., scale=1e-6, size=genes.shape)
 
 # compute target ranks
@@ -62,9 +66,9 @@ target_ranks_times = nns_index_array(times.reshape(-1,1), maxk=times.shape[0]-1)
 njobs = 8
 d = MetricComparisons(genes, njobs=njobs)
 variables, imbalances, _ = d.greedy_feature_selection_target(target_ranks=target_ranks_times, 
-                                                          n_best=args.n_best,
-                                                          n_coords=args.n_coords,
-                                                          k=args.k,
-                                                          symm=False)
+                                                             n_best=args.n_best,
+                                                             n_coords=args.n_coords,
+                                                             k=args.k,
+                                                             symm=False)
 
 pickle.dump([variables, imbalances], open(f"./pickles/nbest{args.n_best}_ncoords{args.n_coords}_k{args.k}.p","wb"))

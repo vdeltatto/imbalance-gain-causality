@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=tau #name of job
+#SBATCH --job-name=tau_emb #name of job
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=16
 #SBATCH --time=12:00:00 #max time required

@@ -8,6 +8,6 @@
 #SBATCH --error=./log_sbatch/%x.o%j               # Standard error
 #SBATCH --mail-type=NONE                 # Mail events (NONE, BEGIN, END, FAIL, ALL). Sends you an email when the job begins, ends, or fails; you can combine options.
 #SBATCH --mail-user=vdeltatt@sissa.it    # Where to send the mail
-#send using parallel sbatch compute_greedy_imbalance.sh ::: {1..30} ::: {1 5 10 20}
+#send using parallel sbatch compute_greedy_imbalance.sh ::: 1 5 10 15 20 25 30 ::: 1 5 10 20
 
 python3 compute_greedy_imbalance.py --n_coords 30 --k ${1} --n_best ${2}
