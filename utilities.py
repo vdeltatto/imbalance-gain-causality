@@ -97,46 +97,36 @@ def compute_info_imbalance(data_A, data_B, k_A=1, k_B=1, metric="euclidean"):
     return imb_A_to_B, imb_B_to_A
 
 
-def construct_time_delay_embedding(X, Y, E, tau_e, sample_times=None):
+def construct_time_delay_embedding(X, E, tau_e, sample_times=None):
     """
-    Computes the time-delay embeddings of X and Y, with embedding length E and embedding time tau_e
+    Computes the time-delay embeddings of X, with embedding length E and embedding time tau_e
 
     Args:
         X (np.ndarray): one-dimensional array with N points
-
-        Y (np.ndarray): one-dimensional array with N points
 
         E (int): embedding dimension
 
         tau_e (int): embedding time
 
         sample_times (np.ndarray or list(int), default=None):
-            whether to construct one embedding for each point in X and Y (if sample_times==None)
+            whether to construct one embedding for each point in X (if sample_times==None)
             or to use only the points in the array sample_times (if sample_times!=None)
     Returns:
         X_time_delay (np.ndarray): time-delay embedding of X, with shape (N,E)
-
-        Y_time_delay (np.ndarray): time-delay embedding of Y, with shape (N,E)
     """
-    if len(X) != len(Y):
-        raise ValueError("Number of points must be the same in the two trajectories!")
 
     if sample_times is None:
         N = len(X)
         start_time = E*tau_e
 
         X_time_delay = np.zeros((N-start_time, E))
-        Y_time_delay = np.zeros((N-start_time, E))
         X_time_delay[:, 0] = X[start_time:]
-        Y_time_delay[:, 0] = Y[start_time:]
         for i_dim in range(1, E):
             X_time_delay[:, i_dim] = X[start_time-i_dim*tau_e:-i_dim*tau_e]
-            Y_time_delay[:, i_dim] = Y[start_time-i_dim*tau_e:-i_dim*tau_e]
 
     else:
         N = len(sample_times)
         X_time_delay = np.zeros((N, E))
-        Y_time_delay = np.zeros((N, E))
 
         for i_sample in range(N):
             embedding_times = np.arange(sample_times[i_sample],
@@ -144,9 +134,8 @@ def construct_time_delay_embedding(X, Y, E, tau_e, sample_times=None):
                                         -tau_e)
 
             X_time_delay[i_sample, :] = X[embedding_times]
-            Y_time_delay[i_sample, :] = Y[embedding_times]
 
-    return X_time_delay, Y_time_delay
+    return X_time_delay
 
 
 def compute_pearson_correlation(X, Y):
