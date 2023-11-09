@@ -99,7 +99,7 @@ def compute_info_imbalance(data_A, data_B, k_A=1, k_B=1, metric="euclidean"):
 
 def construct_time_delay_embedding(X, E, tau_e, sample_times=None):
     """
-    Computes the time-delay embeddings of X and Y, with embedding length E and embedding time tau_e
+    Computes the time-delay embeddings of X, with embedding length E and embedding time tau_e
 
     Args:
         X (np.ndarray): one-dimensional array with N points
