@@ -7,12 +7,12 @@ from utilities import construct_time_delay_embedding
 
 seed = int(sys.argv[1])
 epsilons = np.linspace(0.,0.3,31)
-sample_traj = pickle.load(open(f"../../trajs/lorenz_indep/seed0_ieps0.p","rb"))
+sample_traj = pickle.load(open(f"../../trajs/lorenz/seed0_ieps0.p","rb"))
 N = 5000
 tau = 5
 k = 1
 n_jobs = 8
-alphas = np.linspace(0.,0.3,50)
+alphas = np.linspace(0.,1.5,300) #in Fig3: np.linspace(0.,0.3,50)
 
 # parameters for time-delay embeddings
 E = 3
@@ -23,10 +23,11 @@ info_imbalances_X_to_Y = np.zeros((len(epsilons), len(alphas)))
 info_imbalances_Y_to_X = np.zeros((len(epsilons), len(alphas)))
 
 for ieps, eps in enumerate(epsilons):
-    trajectory = pickle.load(open(f"../../trajs/lorenz_indep/seed{seed}_ieps{ieps}.p","rb"))
+    trajectory = pickle.load(open(f"../../trajs/lorenz/seed{seed}_ieps{ieps}.p","rb"))
     assert trajectory.shape == sample_traj.shape
 
-    X_time_delay, Y_time_delay = construct_time_delay_embedding(X=trajectory[:,1], Y=trajectory[:,4], E=E, tau_e=tau_e)
+    X_time_delay = construct_time_delay_embedding(X=trajectory[:,1], E=E, tau_e=tau_e)
+    Y_time_delay = construct_time_delay_embedding(X=trajectory[:,4], E=E, tau_e=tau_e)
     X0 = X_time_delay[sample_times]
     Y0 = Y_time_delay[sample_times]
     Xtau = X_time_delay[sample_times+tau]
@@ -38,4 +39,4 @@ for ieps, eps in enumerate(epsilons):
     info_imbalances_Y_to_X[ieps] = d.return_inf_imb_causality(
         cause_present=Y0, effect_present=X0, effect_future=Xtau, weights=alphas, k=k)
 
-pickle.dump([info_imbalances_X_to_Y, info_imbalances_Y_to_X], open(f"./pickles/lorenz_indep/seed{seed}.p","wb"))
+pickle.dump([info_imbalances_X_to_Y, info_imbalances_Y_to_X], open(f"./pickles/lorenz/seed{seed}_morealphas.p","wb"))

@@ -58,7 +58,7 @@ genes += np.random.normal(loc=0., scale=1e-6, size=genes.shape)
 
 # compute imbalance for all the pairs
 njobs = 8
-d = MetricComparisons(genes, njobs=njobs)
+d = MetricComparisons(genes, njobs=njobs, maxk=genes.shape[0]-1)
 imbalances = d.return_inf_imb_matrix_of_coords(k=args.k)
 
 pickle.dump([features[24], imbalances], open(f"./pickles/matrix_imbalances_ncoords{args.n_coords}_k{args.k}.p","wb"))

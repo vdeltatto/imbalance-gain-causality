@@ -51,16 +51,20 @@ genes = (genes_df.T).iloc[1:,:].to_numpy(dtype=float)
 features_nonselected = np.delete(np.arange(genes.shape[1]), features_selected)
 print(genes.shape, features_selected.shape, features_nonselected.shape)
 
+# construct array of pairs of single features teste: shape (len(features_nonselected),2)
+feature_pairs = np.zeros((len(features_nonselected),2))
+feature_pairs[:,0] = feature_ref
+feature_pairs[:,1] = features_nonselected
+
 # add noise to break neighbor degeneracies
 genes += np.random.normal(loc=0., scale=1e-6, size=genes.shape)
 
 # compute imbalance of selected features vs nonselected ones
-target_ranks_genes = nns_index_array(genes, maxk=genes.shape[0]-1)
 njobs = 8
-d = MetricComparisons(genes, njobs=njobs)
+d = MetricComparisons(genes, njobs=njobs, maxk=genes.shape[0]-1)
 
 imbalances = np.zeros((len(features_nonselected),2))
 for i_feat, feature_B in enumerate(features_nonselected):
     imbalances[i_feat] = d.return_inf_imb_two_selected_coords(coords1=[feature_ref], coords2=[feature_B], k=args.k)
 
-pickle.dump([features_selected, imbalances], open(f"./pickles/imbalances_selected{args.feature_ref}_vs_nonselected_k{args.k}.p","wb"))
+pickle.dump([feature_pairs, imbalances], open(f"./pickles/imbalances_selected{args.feature_ref}_vs_nonselected_k{args.k}.p","wb"))

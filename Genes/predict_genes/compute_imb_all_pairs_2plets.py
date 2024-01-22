@@ -40,7 +40,7 @@ parser.add_argument("-k", "--k", dest="k",
                     help="Number of neighbors to compute Information Imbalance")
 parser.add_argument("-i_parallel", "--i_parallel", dest="i_parallel",
                     default=0, type=int,
-                    help="Number of parallel job (from 0 to 5)")
+                    help="Number of parallel job (from 0 to 14)")
 args = parser.parse_args()
 
 features, _ = pickle.load(open(f"./pickles/nbest5_ncoords30_k{args.k}.p","rb"))
@@ -65,12 +65,12 @@ genes += np.random.normal(loc=0., scale=1e-6, size=genes.shape)
 
 # compute imbalance for all the pairs
 njobs = 8
-d = MetricComparisons(genes, njobs=njobs)
+d = MetricComparisons(genes, njobs=njobs, maxk=genes.shape[0]-1)
 
-imbalances = np.zeros((pairs_2plets.shape[0] // 6,2))
+imbalances = np.zeros((pairs_2plets.shape[0] // 15,2))
 
-start_pair_index = pairs_2plets.shape[0] // 6 * args.i_parallel
-last_pair_index = pairs_2plets.shape[0] // 6 * (args.i_parallel + 1)
+start_pair_index = pairs_2plets.shape[0] // 15 * args.i_parallel
+last_pair_index = pairs_2plets.shape[0] // 15 * (args.i_parallel + 1)
 for i_imb, i_pair  in tqdm(enumerate(range(start_pair_index,last_pair_index))):
     imbalances[i_imb] = d.return_inf_imb_two_selected_coords(coords1=pairs_2plets[i_pair][0], coords2=pairs_2plets[i_pair][1], k=args.k)
 

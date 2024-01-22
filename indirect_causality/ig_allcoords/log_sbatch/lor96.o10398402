@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "compute_ig_lorenz96.py", line 17, in <module>
-    X0 = trajectory[sample_times,1:D+1]
-IndexError: index 300027 is out of bounds for axis 0 with size 300000

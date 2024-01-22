@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "compute_ig_lorenz96.py", line 42, in <module>
-    pickle.dump([info_imbalances_X_to_Y, info_imbalances_Y_to_X], open(f"./pickles/loren96/seed{seed}.p","wb"))
-FileNotFoundError: [Errno 2] No such file or directory: './pickles/loren96/seed4.p'

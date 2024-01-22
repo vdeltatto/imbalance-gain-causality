@@ -10,4 +10,4 @@
 #SBATCH --mail-user=vdeltatt@sissa.it    # Where to send the mail
 #send using parallel sbatch compute_ig_xy.sh ::: {0..30}
 
-python3 compute_ig.py --case "XY" --seed ${1} 
+python3 compute_ig.py --case "XY" --seed ${1} --coupling "noZ"

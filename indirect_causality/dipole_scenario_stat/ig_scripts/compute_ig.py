@@ -151,10 +151,10 @@ elif args.case == "ZY":
         info_imbalances_Y_to_Z_b[i_tau] = d.return_inf_imb_causality(
             cause_present=Y0, effect_present=Z0, effect_future=Ztau, weights=alphas, k=k)
 
-    info_imbalances_Z_to_X = np.row_stack((info_imbalances_Z_to_Y_b, info_imbalances_Z_to_Y_f))
-    info_imbalances_X_to_Z = np.row_stack((info_imbalances_Y_to_Z_b, info_imbalances_Y_to_Z_f))
+    info_imbalances_Z_to_Y = np.row_stack((info_imbalances_Z_to_Y_b, info_imbalances_Z_to_Y_f))
+    info_imbalances_Y_to_Z = np.row_stack((info_imbalances_Y_to_Z_b, info_imbalances_Y_to_Z_f))
 
-    pickle.dump([taus, info_imbalances_Z_to_X, info_imbalances_X_to_Z], open(f"./pickles_noZ/ZY_seed{args.seed}.p","wb"))
+    pickle.dump([taus, info_imbalances_Z_to_Y, info_imbalances_Y_to_Z], open(f"./pickles_noZ/ZY_seed{args.seed}.p","wb"))
     del info_imbalances_Z_to_Y_f, info_imbalances_Y_to_Z_f, info_imbalances_Z_to_Y_b, info_imbalances_Y_to_Z_b
 
 elif args.case == "ZX_noemb":

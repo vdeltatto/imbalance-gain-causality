@@ -13,7 +13,7 @@ D = 40
 tau = 30
 k = 20
 n_jobs = 8
-alphas = np.linspace(0.,1.5,50)
+alphas = np.linspace(0.,1.5,300) #in Fig3: np.linspace(0.,1.5,50)
 
 # parameters for time-delay embeddings
 E = 30
@@ -27,7 +27,8 @@ for ieps, eps in enumerate(epsilons):
     trajectory = pickle.load(open(f"../../trajs/lorenz96/seed{seed}_ieps{ieps}.p","rb"))
     assert trajectory.shape == sample_traj.shape
 
-    X_time_delay, Y_time_delay = construct_time_delay_embedding(X=trajectory[:,1], Y=trajectory[:,D+1], E=E, tau_e=tau_e)
+    X_time_delay = construct_time_delay_embedding(X=trajectory[:,1], E=E, tau_e=tau_e)
+    Y_time_delay = construct_time_delay_embedding(X=trajectory[:,D+1], E=E, tau_e=tau_e)
     X0 = X_time_delay[sample_times]
     Y0 = Y_time_delay[sample_times]
     Xtau = X_time_delay[sample_times+tau]
@@ -39,4 +40,4 @@ for ieps, eps in enumerate(epsilons):
     info_imbalances_Y_to_X[ieps] = d.return_inf_imb_causality(
         cause_present=Y0, effect_present=X0, effect_future=Xtau, weights=alphas, k=k)
 
-pickle.dump([info_imbalances_X_to_Y, info_imbalances_Y_to_X], open(f"./pickles/lorenz96/seed{seed}.p","wb"))
+pickle.dump([info_imbalances_X_to_Y, info_imbalances_Y_to_X], open(f"./pickles/lorenz96/seed{seed}_morealphas.p","wb"))

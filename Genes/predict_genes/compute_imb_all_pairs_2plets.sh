@@ -8,5 +8,5 @@
 #SBATCH --error=./log_sbatch/%x.o%j            # Standard error
 #SBATCH --mail-type=FAIL                 # Mail events (NONE, BEGIN, END, FAIL, ALL). Sends you an email when the job begins, ends, or fails; you can combine options.
 #SBATCH --mail-user=vdeltatt@sissa.it    # Where to send the mail
-#send using parallel sbatch compute_imb_all_pairs_2plets.sh ::: {0..5}
+#send using parallel sbatch compute_imb_all_pairs_2plets.sh ::: {0..14}
 python3 compute_imb_all_pairs_2plets.py --k 30 --i_parallel ${1}

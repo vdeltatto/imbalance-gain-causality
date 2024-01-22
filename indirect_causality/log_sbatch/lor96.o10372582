@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "../dynamical-systems/three_lorenz_96_systems.py", line 84, in <module>
-    xyz0 = np.append(x0, y0, z0)
-  File "<__array_function__ internals>", line 200, in append
-  File "/home/vdeltatt/mydadapy/lib64/python3.8/site-packages/numpy/lib/function_base.py", line 5499, in append
-    return concatenate((arr, values), axis=axis)
-  File "<__array_function__ internals>", line 200, in concatenate
-TypeError: only integer scalar arrays can be converted to a scalar index

@@ -1,3 +1,5 @@
 # Ignore traj directories
 *trajs*
 *log_sbatch*
+*csv*
+*dataset*
