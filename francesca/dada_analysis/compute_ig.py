@@ -41,7 +41,7 @@ electrodes = pd.read_csv("/scratch/vdeltatt/imbalance-gain-causality/EEG_analysi
 channel_X_index = np.where(electrodes==args.channel_X)[0][0]
 channel_Y_index = np.where(electrodes==args.channel_Y)[0][0]
 
-with open("/scratch/vdeltatt/imbalance-gain-causality/EEG_analysis/pickles_osf/dataset_onset.p", "rb") as f: #before: dataset_onset_dichotomous_test
+with open("/scratch/vdeltatt/imbalance-gain-causality/EEG_analysis/pickles_osf/dataset_offset.p", "rb") as f:
     data = pickle.load(f)
 
 # construct X and Y datasets

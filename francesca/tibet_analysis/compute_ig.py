@@ -36,12 +36,12 @@ subjects = (['03CM','04ML','05NK','06AT','07YC','08RD','09NT','10EM','11AD','12A
 subject = subjects[args.i_subject]
 
 # read data here
-electrodes = pd.read_csv("./TiBET/electrodes.csv", header=None).to_numpy(dtype=str).flatten()
+electrodes = pd.read_csv("./TiBET_dataset/electrodes.csv", header=None).to_numpy(dtype=str).flatten()
 channel_X_index = np.where(electrodes==args.channel_X)[0][0]
 channel_Y_index = np.where(electrodes==args.channel_Y)[0][0]
 
-X = loadmat(f"./TiBET/{subject}_filled_offset.mat")['mat'][channel_X_index].T
-Y = loadmat(f"./TiBET/{subject}_filled_offset.mat")['mat'][channel_Y_index].T
+X = loadmat(f"./TiBET_dataset/{subject}_filled_offset.mat")['mat'][channel_X_index].T
+Y = loadmat(f"./TiBET_dataset/{subject}_filled_offset.mat")['mat'][channel_Y_index].T
 assert X.shape == Y.shape, f"Error: shapes of X ({X.shape}) and Y ({Y.shape}) do not match!"
 
 n_jobs = 4
