@@ -61,8 +61,8 @@ n_jobs = 4
 alphas = np.linspace(0.,1.5,300)
 taus = np.arange(0,X.shape[1]-args.t0-args.E)
 
-transfer_entropy_X_to_Y = np.zeros((len(taus),len(alphas)))
-transfer_entropy_Y_to_X = np.zeros((len(taus),len(alphas)))
+transfer_entropy_X_to_Y = np.zeros((len(taus)))
+transfer_entropy_Y_to_X = np.zeros((len(taus)))
 
 # extract time-delay embeddings at time 0
 X0 = X[:,:args.E]
@@ -72,15 +72,15 @@ for i_tau, tau in tqdm(enumerate(taus)):
     Xtau = X[:,tau:tau + args.E]
     Ytau = Y[:,tau:tau + args.E]
 
-dataset = pd.DataFrame(np.column_stack((X0,Y0,Xtau,Ytau))) #, columns=variable_names)
+    dataset = pd.DataFrame(np.column_stack((X0,Y0,Xtau,Ytau))) #, columns=variable_names)
 
-# compute transfer entropy in both directions
-transfer_entropy_X_to_Y[i_tau] = (
-    knncmi.cmi(list(np.arange(args.E)), list(np.arange(3*args.E,4*args.E)), list(np.arange(args.E,2*args.E)), k=args.k, data=dataset, minzero=args.minzero)
-)
-transfer_entropy_Y_to_X[i_tau] = (
-    knncmi.cmi(list(np.arange(args.E,2*args.E)), list(np.arange(2*args.E,3*args.E)), list(np.arange(args.E)), k=args.k, data=dataset, minzero=args.minzero)
-)
+    # compute transfer entropy in both directions
+    transfer_entropy_X_to_Y[i_tau] = (
+        knncmi.cmi(list(np.arange(args.E)), list(np.arange(3*args.E,4*args.E)), list(np.arange(args.E,2*args.E)), k=args.k, data=dataset, minzero=args.minzero)
+    )
+    transfer_entropy_Y_to_X[i_tau] = (
+        knncmi.cmi(list(np.arange(args.E,2*args.E)), list(np.arange(2*args.E,3*args.E)), list(np.arange(args.E)), k=args.k, data=dataset, minzero=args.minzero)
+    )
 
 # save data
 pickle.dump([taus, transfer_entropy_X_to_Y, transfer_entropy_Y_to_X], 

@@ -9,4 +9,4 @@
 #SBATCH --mail-type=FAIL                 # Mail events (NONE, BEGIN, END, FAIL, ALL). Sends you an email when the job begins, ends, or fails; you can combine options.
 #SBATCH --mail-user=vdeltatt@sissa.it    # Where to send the mail
 #send using parallel sbatch compute_te.sh ::: {0..20} ::: CP6 C6 ::: Fz FC2
-python3 compute_te.py --i_subject ${1} --channel_X ${2} --channel_Y ${3} --E 45 --tau_e 1 --k 3 --t0 50 --minzero 0
+python3 compute_te.py --i_subject ${1} --channel_X ${2} --channel_Y ${3} --E 45 --tau_e 1 --k 7 --t0 50 --minzero 0
