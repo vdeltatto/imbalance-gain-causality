@@ -1,6 +1,6 @@
 # imbalance-gain-causality
 
-This repository contains the supporting codes for the article **Robust inference of causality in high-dimensional dynamical processes from the Information Imbalance of distance ranks** ([arXiv](https://doi.org/10.48550/arXiv.2305.10817)).
+This repository contains the supporting codes for the article **Robust inference of causality in high-dimensional dynamical processes from the Information Imbalance of distance ranks** ([arXiv](https://doi.org/10.48550/arXiv.2305.10817), [PNAS](https://doi.org/10.1073/pnas.2317256121)).
 
 The functions employed to compute the Imbalance Gain in the paper are in the Python modules _utilities.py_ and _imbalance_gain.py_, and their use is illustrated in the notebook _tutorial.ipynb_. The Information Imbalance for the causality tests can also be computed using the [DADApy package](https://github.com/sissa-data-science/DADApy), as shown in the same tutorial.
 
