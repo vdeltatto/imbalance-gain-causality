@@ -90,7 +90,7 @@ if __name__ == '__main__':
 
     # integrate equations
     trajectory = odeint(three_lorenz_96, xyz0, times,
-                        args=(args.N, args.Fx, args.Fy, args.Fx, args.epsilon_xy, args.epsilon_zx))
+                        args=(args.N, args.Fx, args.Fy, args.Fz, args.epsilon_xy, args.epsilon_zx))
     trajectory = np.append(times[:, np.newaxis], trajectory, axis=-1)
 
     # undersample trajectory

@@ -9,6 +9,17 @@ from numpy.random import random
 # definition of the system equations
 
 
+
+
+
+
+
+
+
+
+
+
+
 def coupled_rossler_systems(t, xyz, omega_x, omega_y, omega_z, epsilon_zx, epsilon_zy):
     """
     Three coupled Rossler systems, Z->X and Z->Y (Z is a confounder)

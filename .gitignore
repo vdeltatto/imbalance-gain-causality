@@ -1,6 +1,9 @@
 # Ignore traj directories
 *trajs*
 *log_sbatch*
+log_sbatch
 *csv*
+*pickles*
 *dataset*
 *three_rossler*
+*figures*
